@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selector Sectors</title>
+    <style>
+        /* 1. UNIVERSAL SELECTOR: * 
+           Purpose: Applies to all elements on the page */
+        * {
+            font-family: Arial;
+        }
+
+        /* 2. ELEMENT SELECTOR: p 
+           Purpose: Targets all <p> tags directly by element name */
+        p {
+            color: darkblue;
+        }
+
+        /* 3. CLASS SELECTOR: .note 
+           Purpose: Targets all elements that have class="note" */
+        .note {
+            background-color: lightyellow;
+        }
+
+        /* 4. ID SELECTOR: #important 
+           Purpose: Targets the single unique element with id="important" */
+        #important {
+            border: 1px solid black;
+        }
+
+        /* 5. GROUP SELECTOR: h3, .note 
+           Purpose: Applies the same style to multiple selectors at once */
+        h3, .note {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- STUDENT DETAILS -->
+    <h1>Student Details</h1>
+    <p>Name: idam philip N </p>
+    <p>Registration No: 2024/ND/41283/CS</p>
+    <hr>
+
+    <!-- 1. UNIVERSAL SELECTOR DEMO -->
+    <h2>1. Universal Sector *</h2>
+    <p>All text on this page uses Arial because of the universal selector.</p>
+
+    <!-- 2. ELEMENT SELECTOR DEMO -->
+    <h2>2. Element Sector</h2>
+    <p>This paragraph is dark blue because it’s styled by the p element selector.</p>
+
+    <!-- 3. CLASS SELECTOR DEMO -->
+    <h2>3. Class Sector</h2>
+    <p class="note">This paragraph has a yellow background from the .note class.</p>
+    <p class="note">Any tag with class="note" will look the same.</p>
+
+    <!-- 4. ID SELECTOR DEMO -->
+    <h2>4. ID Sector</h2>
+    <p id="important">This paragraph has a border because of the #important ID. ID is used only once.</p>
+
+    <!-- 5. GROUP SELECTOR DEMO -->
+    <h2>5. Group Sector</h2>
+    <h3>This h3 is bold</h3>
+    <p class="note">And this .note paragraph is also bold, because of the group selector h3, .note</p>
+
+</body>
+</html>
